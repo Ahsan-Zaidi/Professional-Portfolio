@@ -4,18 +4,54 @@
     box-sizing: border-box;
 }
 
+/*Navigation*/
 .navbar {
-    position: fixed;
-    width: 100%;
-    background: red;
-    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    top: 0;
+    position: sticky;
 }
 
-.navbar .menu li {
+.navbar ul {
+    display: flex;
     list-style: none;
-    display: inline-block;
+    margin: 20px 0px;
 }
 
-.navbar .menu li a {
-    color:black;
+.navbar ul li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.0rem;
+    font-weight: bold;
 }
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+}
+
+.navbar ul li a:hover {
+    background-color: limegreen;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+}
+/*
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 900px;
+    width: 100%
+}
+
