@@ -124,14 +124,18 @@
 /*projects*/
 .projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+    flex-wrap: column;
+    background-color: rgba(52, 50, 50, 0.9);
+    align-items: center;
+    padding: 20px;
 }
 
 .work {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    box-sizing: border-box;
+    box-shadow: 50px;
 }
 
 .work img {
