@@ -72,7 +72,7 @@ No testing is currently set up
 
 ## 👪Contribution
 
-Enail me for contribution.
+Email me for contribution.
 
 ## Questions
 
