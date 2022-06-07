@@ -1,13 +1,16 @@
+/*DEFAULT STYLING OF ALL WEBPAGE ELEMENTS*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*STYLING OF THE SCROLL BEHAVIOUR OF OUR WEBPAGE*/
 html{
     scroll-behavior: smooth;
 }
 
-/*Navigation*/
+/*STYLING FOR NAVIGATION*/
 .navbar {
     display: flex;
     justify-content: center;
@@ -17,30 +20,35 @@ html{
     position: sticky;
 }
 
+/*STYLING OF UNLISTED LIST ELEMENTS*/
 .navbar ul {
     display: flex;
     list-style: none;
     margin: 20px 0px;
 }
 
+/*STYLING OF LISTED ELEMENTS WITHIN UNLISTED ELEMENT*/
 .navbar ul li {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.0rem;
     font-weight: bold;
 }
 
+/*STYLING OF ANCHOR TAGS WITHIN LISTED ELEMENTS*/
 .navbar ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 25px;
 }
 
+/*STYLING OF NAVIGATION ONCE THE ACTION OF CURSOR "HOVERS" OVER SAID ELEMENT*/
 .navbar ul li a:hover {
     background-color: limegreen;
     color: white;
     box-shadow: 0 0 10px white;
 }
 
+/*STYLING OF HOME ELEMET*/
 #home {
     display: flex;
     flex-direction: column;
@@ -50,6 +58,7 @@ html{
     color: white;
 }
 
+/*STYLING OF BACKGROUND OF HOME ELEMENT*/
 #home::before {
     content: "";
     position: absolute;
@@ -62,6 +71,7 @@ html{
     opacity: 0.8;
 }
 
+/*STYLING OF THE MAIN BOX ELEMENT CONTAINING THE HEADER*/
 .main {
     display: flex;
     flex-direction: column;
@@ -71,6 +81,7 @@ html{
     top: 50%;
 }
 
+/*STYLING OF THE HEADER TEXT ITSELF*/
 .header {
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
@@ -79,7 +90,7 @@ html{
     color: white;
 }
 
-/*About Me section*/
+/*ABOUT ME SECTION*/
 #about {
     display: flex;
     flex-direction: column;
@@ -90,17 +101,20 @@ html{
     color: black;
 }
 
+/*STYLING BOX THAT CONTAINS ABOUT ME SECTION*/
 #pic {
     display: inline-flex;
     box-shadow: 0 0 10px gray;
 }
 
+/*STYLING THE IMAGE WITHIN PICTURE SECTION*/
 #pic img {
     width: 300px;
     height: 300px;
     box-shadow: 0 0 10px gray;
 }
 
+/*STYLING THE INRO TEXT HEADER*/
 #intro {
     display: flex;
     flex-direction: column;
@@ -109,22 +123,24 @@ html{
 
 }
 
+/*STYLING THE TEXT WITHIN INTO HEADER*/
 #intro h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     float: right;
 }
 
+/*STYLING OF ALL HEADINGS*/
 .heading {
     font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-left: 25px;
     margin-top: 40px;
-margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
-/*Skills*/
+/*SKILLS SECTION*/
 #skills {
     display: flex;
     flex-direction: column;
@@ -134,6 +150,7 @@ margin-bottom: 40px;
     border-style: double;
 }
 
+/*STYLING OF ROW ELEMENT CONTAINING BOX*/
 .row {
     display: flex;
     justify-content: space-evenly;
@@ -141,6 +158,7 @@ margin-bottom: 40px;
     box-sizing: border-box;
 }
 
+/*STYLING OF BOX ELEMENT CONTAINING ALL SKILLS*/
 .box {
     display: flex;
     flex-direction: column;
@@ -156,6 +174,7 @@ margin-bottom: 40px;
     transition: all .8s;
 }
 
+/*STYLING OF THE SAME BOX ELEMENT WHEN ACTION OF CURSOR IS 'HOVERING'*/
 .box:hover {
     background-position: left bottom;
     color: black;
@@ -163,6 +182,7 @@ margin-bottom: 40px;
     box-shadow: 0 0 20px rgb(35, 255, 24);
 }
 
+/*STYLING OF IMAGES WIHTIN BOX ELEMENT*/
 .box img {
     width: 80px;
     height: 80px;
@@ -170,7 +190,7 @@ margin-bottom: 40px;
     padding: 10px;
 }
 
-/*projects*/
+/*PROJECTS SECTION*/
 .projects {
     display: flex;
     flex-wrap: column;
@@ -180,6 +200,7 @@ margin-bottom: 40px;
     margin-top: 60px;
 }
 
+/*STYLING OF WORK SECTION THAT CONTAINS IMAGES*/
 .work {
     display: flex;
     flex-wrap: wrap;
@@ -189,13 +210,14 @@ margin-bottom: 40px;
     border-style: double;
 }
 
+/*STYLING OF THE IMAGES THEMSELVES WITHIN WORK SECTION*/
 .work img {
     width: 350px;
     height: 250px;
     margin: 10px;
 }
 
-/*contact me*/
+/*CONTACT ME*/
 #contact {
     display: flex;
     flex-direction: column;
@@ -205,6 +227,7 @@ margin-bottom: 40px;
     padding: 20px;
 }
 
+/*STYLING OF FORM IN CONTACT ME*/
 .form {
     display: flex;
     flex-direction: column;
@@ -213,6 +236,7 @@ margin-bottom: 40px;
     margin: 20px 0px;
 }
 
+/*STYLING OF INPUT BOXES*/
 .input {
     padding: 10px;
     margin: 15px;
@@ -221,6 +245,7 @@ margin-bottom: 40px;
     outline: none;
 }
 
+/*STYLING OF TEXT IN TEXT BOX*/
 #msg {
     width: 20%;
     padding: 10px;
@@ -229,6 +254,7 @@ margin-bottom: 40px;
     outline: none;
 }
 
+/*STYLING OF SEND BUTTON IN CONTACT SECTION*/
 #send {
     padding: 10px;
     width: 10%;
@@ -237,22 +263,27 @@ margin-bottom: 40px;
     outline: none;
 }
 
+/*FURTHER STLYING OF SEND BUTTON ONCE ACTION OF 'HOVER' IS MADE BY CURSOR*/
 #send:hover {
     cursor: pointer;
     box-shadow: 0 0 10px rgb(35, 255, 24);
 }
 
-/*footer*/
+/*FOOTER SECTION*/
 footer {
     display: flex;
 }
 
+/*STYLING OF TEXT IN FOOTER*/
 .author {
-    align-items: center;
+    text-align: center;
+    margin-left: 42%;
 }
 
+/*STYLING OF SOCIAL MEDIA ICONS IN FOOTER*/
 .social {
-    
+    border: 1px;
+    border-style: solid;
 }
 
 
