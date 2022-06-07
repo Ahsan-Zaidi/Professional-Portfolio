@@ -85,7 +85,6 @@ html{
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px;
-    margin-bottom: 20px;
     width:auto;
     background-color: white;
     color: black;
@@ -93,7 +92,6 @@ html{
 
 #pic {
     display: inline-flex;
-    margin-top: 25px;
     box-shadow: 0 0 10px gray;
 }
 
@@ -122,6 +120,8 @@ html{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-left: 25px;
+    margin-top: 40px;
+margin-bottom: 40px;
 }
 
 /*Skills*/
@@ -130,7 +130,7 @@ html{
     flex-direction: column;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    color: black;
     border-style: double;
 }
 
@@ -240,6 +240,19 @@ html{
 #send:hover {
     cursor: pointer;
     box-shadow: 0 0 10px rgb(35, 255, 24);
+}
+
+/*footer*/
+footer {
+    display: flex;
+}
+
+.author {
+    align-items: center;
+}
+
+.social {
+    
 }
 
 
